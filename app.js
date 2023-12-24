@@ -38,10 +38,9 @@ fetchAllUsernames()
                     const user = await fetchUserInformation(username);
                     let userInfo = document.getElementById('user-info');
                     userInfo.textContent = `${user.login}`;
-                    userInfo.innerHTML = `<div>
-                    <h3> ${user.login}</h3>
-                        <img src=${user.avatar_url}</img>
-                    </div>`
+                    userInfo.innerHTML = 
+                    `<h1> ${user.login}</h1>
+                    <img src=${user.avatar_url}</img>`;
                     
 
                 break;
