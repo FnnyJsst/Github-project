@@ -125,6 +125,28 @@ img {
 }
 
 
+#results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.user-container {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.user-container img {
+  width: 10rem;
+}
+
+@media (max-width: 700px) {
+  .user-container {
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 700px) {
   .container .text{
