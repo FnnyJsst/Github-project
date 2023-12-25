@@ -153,6 +153,7 @@ h1 {
 
 .user-container img {
   width: 8rem;
+  border-radius: 100%;
 }
 
 .pseudo-container {
