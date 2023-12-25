@@ -120,8 +120,19 @@ form .form-row .textarea{
   z-index: 2;
 }
 
-img {
-  width: 30%;
+.user-picture {
+  /* width: 20%; */
+  border-radius: 100%;
+  border: 1px solid #56d8e4;
+  box-shadow: -2px 2px 4px 0px rgba(159,1,234,0.78);
+  -webkit-box-shadow: -2px 2px 4px 0px rgba(159,1,234,0.78);
+  -moz-box-shadow: -2px 2px 4px 0px rgba(159,1,234,0.78);
+}
+
+h1 {
+  font-size: 1rem;
+  color: darkgrey;
+  font-weight: 500;
 }
 
 
@@ -135,10 +146,22 @@ img {
   width: 30%;
   margin: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .user-container img {
-  width: 10rem;
+  width: 8rem;
+}
+
+.pseudo-container {
+  display: flex;
+}
+
+.coeur {
+  width: 1.5rem !important;
+  
 }
 
 @media (max-width: 700px) {

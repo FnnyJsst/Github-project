@@ -33,8 +33,10 @@ function researchUser() {
             const userInfo = document.createElement('div');
             userInfo.innerHTML = 
             `<div class="user-container"> 
-                <h1>${username}</h1>
-                <a href="${user.html_url}">
+                <div class="pseudo-container">
+                    <h1>@${username}  </h1><span><img class="coeur" src="/assets/coeur.png"></span>
+                    <a href="${user.html_url}">
+                </div>
                 <img src="${user.avatar_url}" alt="${username}'s avatar class="user-picture">
                 </a>
             </div>`;
