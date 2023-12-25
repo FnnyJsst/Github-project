@@ -4,6 +4,7 @@ const textarea = document.getElementById("textarea");
 const researchButton = document.getElementById('research-button');
 const resultsContainer = document.getElementById('results-container');
 const userPicture = document.getElementsByClassName('user-picture');
+const heart = document.getElementsByClassName("coeur");
 
 //Fetch Github API
 const fetchAllUserInformation = async () => {
@@ -34,7 +35,12 @@ function researchUser() {
             userInfo.innerHTML = 
             `<div class="user-container"> 
                 <div class="pseudo-container">
-                    <h1>@${username}  </h1><span><img class="coeur" src="/assets/coeur.png"></span>
+                    <h1>@${username}  </h1>
+                    <span>
+                    <a href="">
+                    <img class="coeur" src="/assets/coeur.png">
+                    </a>
+                    </span>
                     <a href="${user.html_url}">
                 </div>
                 <img src="${user.avatar_url}" alt="${username}'s avatar class="user-picture">
@@ -52,7 +58,13 @@ function researchUser() {
 //Le fait de cliquer sur le bouton de recherche affiche la fonction de recherche de l'utilisateur
 researchButton.addEventListener('click', researchUser);
 
+// function favUsers(user) {
+//     let favoriteUsers = [];
+//     favUser.push(user);
+//     return favoriteUsers;
+// }
 
+// heart.addEventListener('click', favUsers);
 
 fetchAllUserInformation();
     // .then(() => {
