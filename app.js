@@ -35,7 +35,7 @@ function researchUser() {
             userInfo.innerHTML = 
             `<div class="user-container"> 
                 <div class="pseudo-container">
-                    <h1>@${username}  </h1>
+                    <h1>@${username }  </h1>
                     <span>
                     <a href="">
                     <img class="coeur" src="/assets/coeur.png">
